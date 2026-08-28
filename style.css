@@ -370,7 +370,7 @@ footer {
 
 
     .menu a {
-        font-size: 0.8rem ;
+        font-size: 0.6rem ;
         padding: 8px 12px ;
     }
     .menu ul {
@@ -413,7 +413,7 @@ footer {
 
     .tareatext {
         text-align: center;
-        margin-left: 0;
+        margin-left: 10;
         margin-top: 10px;
         font-size: 90%;
        
