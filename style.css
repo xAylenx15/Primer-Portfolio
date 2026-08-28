@@ -375,9 +375,7 @@ footer {
     }
     .menu ul {
         flex-wrap: column;
-        align-items: flex-end;
         justify-content: center;
-        gap: 12px;
     }
 
 
@@ -412,9 +410,6 @@ footer {
         padding-bottom: 50px; 
         margin: 0 auto; 
     }
-   button{
-      
-   }
 
     .tareatext {
         text-align: center;
