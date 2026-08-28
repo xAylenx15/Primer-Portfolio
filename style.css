@@ -340,6 +340,11 @@ footer {
    10. ADAPTABILIDAD DE CELULAR
    ========================================= */
 @media (max-width: 768px) {
+      header {
+        height: auto; 
+        min-height: 100vh;
+        padding-bottom: 30px;
+    }
 
     h1 {
         font-size: 200%;
@@ -361,6 +366,12 @@ footer {
     .menu {
         align-self: center;
         margin-top: 20px;
+    }
+
+
+    .menu a {
+        font-size: 0.95rem ;
+        padding: 8px 12px ;
     }
     .menu ul {
         flex-wrap: wrap;
