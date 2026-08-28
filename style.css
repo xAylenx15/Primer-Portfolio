@@ -1,0 +1,337 @@
+/* =========================================
+   1. GLOBALES Y RESETEOS
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+/* =========================================
+   2. TIPOGRAFÍA Y ESTILOS GENERALES
+   ========================================= */
+h1, h3 {
+    align-self: flex-start;
+    text-align: left;
+}
+
+h2, h3 {
+    margin-bottom: 40px; /* Espacio hacia abajo para subtítulos */
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 300%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    padding-top: 20%;
+    padding-left: 8%;
+}
+
+h3 {
+    color: #FFFFFF;
+    font-size: 120%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 14%;
+    padding-top: 1%;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6; /* Hace que los renglones no estén tan apretados */
+}
+
+/* =========================================
+   3. ESTILOS COMPARTIDOS ENTRE SECCIONES
+   ========================================= */
+#conocimientos,
+#trabajos,
+#contacto {
+    text-align: center;
+    color: white;
+    margin-top: 130px;
+}
+
+#conocimientos h2,
+#trabajos h2 {
+    margin-top: 100px;
+    font-size: 400%;
+    font-family: 'Hanuman', serif;
+    font-style: italic;
+}
+
+/* =========================================
+   4. HEADER Y MENÚ DE NAVEGACIÓN
+   ========================================= */
+header {
+    background-image: url(https://images.unsplash.com/photo-1781615711923-1e6e24a755e1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu {
+    align-self: flex-end;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.menu a {
+    background-color: #1a1a1a;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 10px 20px;
+    border: 1px solid white;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: blueviolet;
+}
+
+/* =========================================
+   5. SECCIÓN: SOBRE MÍ
+   ========================================= */
+#sobre-mi {
+    margin-top: 200px;
+    background-color: black;
+}
+
+.sobre {
+    text-align: center;
+    font-size: 400%;
+    font-family: 'Hanuman', serif;
+    font-style: italic;
+    color: white;
+}
+
+.conte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 130px;
+    padding: 0 80px;
+}
+
+.conte p {
+    max-width: 500px;
+    text-align: left;
+    font-size: 140%;
+    color: white;
+}
+
+/* =========================================
+   6. SECCIÓN: CONOCIMIENTOS
+   ========================================= */
+#conocimientos p {
+    margin-top: 100px;
+    font-size: 160%;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+}
+
+.tresimg {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 50px;
+    width: 100%;             
+}
+
+.tresimg img {
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+/* 1. La caja padre usa Flexbox para agarrar la tabla y tirarla al centro exacto */
+.contenedortabla {
+    display: flex;
+    justify-content: center;
+    align-items:center; /* Centra horizontalmente */
+    width: 100%;
+    margin-top: 50px; /* El margen lo maneja la caja ahora */
+}
+
+/* 2. La tabla solo se preocupa por su propio diseño (sin flex) */
+.tabla {
+    border-collapse: collapse; /* Mantiene los bordes simples */
+}
+
+/* 3. Las celdas */
+.tabla th, .tabla td {
+    border: 2px solid blueviolet;
+    padding: 15px 40px;
+    color: white;
+    text-align: center;
+}
+.tabla td{
+    font-size: 140%;
+}
+
+/* 4. El título de la tabla */
+.tabla th {
+    background-color: #1a1a1a;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+/* =========================================
+   7. SECCIÓN: TRABAJOS
+   ========================================= */
+#trabajos p {
+    font-size: 180%;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+}
+
+.dosColumnas {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.contenedor {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.contenedor img {
+    border-radius: 10px;
+}
+
+.contenedor a {
+    background-color: #1a1a1a;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid rgb(105, 6, 105);
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.contenedor a:hover {
+    background-color: violet;
+    color: white;
+    transform: translateY(-8px);
+}
+
+/* =========================================
+   8. SECCIÓN: CONTACTO
+   ========================================= */
+#contacto {
+    background-image: url(https://images.unsplash.com/photo-1504333638930-c8787321eee0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#contacto h2 {
+    margin-top: 100px;
+    font-size: 400%;
+    font-family: 'Hanuman', serif;
+    font-style: italic;
+}
+
+#contacto p {
+    font-size: 110%;
+}
+
+#contacto p legend {
+    font-size: 130%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    margin-top: 10px;
+}
+
+.division {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 80px;
+    gap: 500px;
+}
+
+.tareatext {
+    font-size: 29px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+/* Formulario y Botones */
+.division form fieldset {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin-bottom: 18px;
+    border-radius: 50px;
+}
+
+p button {
+    color: white;
+    background-color: #1a1a1a;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.3s ease;
+    padding: 8px;
+}
+
+p button:hover {
+    color: blueviolet;
+    transform: translateY(-4px);
+}
+
+/* Redes Sociales */
+.redes-sociales {
+    display: flex;
+    justify-content: center; 
+    gap: 40px; 
+    margin-top: 30px; 
+}
+
+.redes-sociales a {
+    color: white; 
+    font-size: 55px; 
+    text-decoration: none; 
+    transition: all 0.3s ease; 
+}
+
+.redes-sociales a:hover {
+    color: blueviolet; 
+    transform: translateY(-8px); 
+}
+
+/* =========================================
+   9. FOOTER
+   ========================================= */
+footer {
+    background-color: black;
+    text-align: end;
+    color: white;
+    margin-top: 10px;
+}

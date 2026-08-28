@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Mi primer Portfolio - Aylen Tapia </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Hanuman:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li> <a href="#sobre-mi"> Sobre Mi </a></li>
+                <li> <a href="#conocimientos"> Conocimientos</a></li>
+                <li> <a href="#trabajos"> Trabajos </a></li>
+                <li> <a href="#contacto"> Contacto</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="sinmargen"> Bienvenido/as a mi <br> primer portfolio !! </h1>
+        <h3> <em>Proxima programadora</em> </h3>
+
+    </header>
+    <main>
+        <section id="sobre-mi">
+            <h2 class="sobre"> Sobre Mi </h2>
+            <div class="conte">
+
+                <img src="https://i.pinimg.com/1200x/77/11/52/771152837efe1c7dad980424dfa9a950.jpg" alt="Foto mia"
+                    width="500">
+                <p> Soy estudiante de la Tecnicatura Universitaria de Programacion de Salta (UNSa).
+                    Me interesa la tecnología no solo como herramienta, sino como una forma de encontrar soluciones a
+                    problemas y convertir ideas en proyectos concretos.
+                    Disfruto aprender cosas nuevas, enfrentar problemas que requieren razonamiento y buscar distintas
+                    maneras de llegar a
+                    una solución. Actualmente, mi objetivo es seguir fortaleciendo mis conocimientos y adquirir
+                    experiencia
+                    en distintas áreas
+                    de la informática, mientras descubro en cuáles quiero especializarme en el futuro.
+                </p>
+            </div>
+        </section>
+        <section id="conocimientos">
+            <h2> Conocimientos</h2>
+            <p> Los conocimientos de lenguajes que tengo son los siguientes: </p>
+            <div class="tresimg">
+                <img src="https://i.imgur.com/T95mUkN.png" alt="foto de c" width="300">
+                <img src="https://i.imgur.com/EcxtVQT.png" alt="foto de java" width="300">
+                <img src="https://i.imgur.com/ZxVYtAg.png" alt="foto de python" width="300">
+            </div>
+            <div class="contenedortabla">
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th> Idiomas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ingles</td>
+                        </tr>
+                        <tr>
+                            <td>Español</td>
+                        </tr>
+                        <tr>
+                            <td> Japones Basico</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <section id="trabajos">
+            <h2> Trabajo </h2>
+            <div class="dosColumnas">
+                <div class="contenedor">
+                    <p> Realice esta pagina en html5</p>
+                    <img src="https://i.imgur.com/plneqQd.png" alt="foto de la pagina" width="400">
+                    <a href="google.com"> Link de la Pagina</a>
+                </div>
+                <div class="contenedor">
+                    <p> Curse dos cursos uno de Python y otro de JavaScript</p>
+                    <img src="https://i.imgur.com/56do2uY.png" alt="foto de los cursos" width="400">
+                </div>
+            </div>
+
+
+
+        </section>
+        <section id="contacto">
+            <h2> Contacto</h2>
+            <div class="division">
+                <div class="tareatext">
+                    <p> Puede dejarme un mensaje <br> o encontrarme en mis redes sociales</p>
+                    <div class="redes-sociales">
+                        <!-- Ícono de LinkedIn -->
+                        <a href="https://www.linkedin.com/in/aylen-tapia-39a407283/?skipRedirect=true" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <!-- Ícono de GitHub -->
+                        <a href="https://github.com/xAylenx15" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <form id="mi-formulario">
+                    <fieldset>
+
+                        <legend> Tus datos</legend>
+                        <p>
+                            <label for="nombreyapellido">Nombre y apellido</label>
+                            <br>
+                            <input type="text" id="nombreyapellido" name="nombreyapellido" placeholder=" " required>
+                        </p>
+                        <p>
+                            <label for="email"> Correo Electronico </label>
+                            <br>
+                            <input type="email" id="email" name="email" placeholder="mail@gmail.com" required>
+                        </p>
+                        <p>
+                            <label for="telefono"> Telefono </label>
+                            <br>
+                            <input type="tel" id="telefono" name="telefono" placeholder=" " required>
+                        </p>
+                        <p>
+                            <label for="asunto">Asunto </label>
+                            <br>
+                            <select name="asunto" id="asunto">
+                                <option value="consulta" name="asunto"> Una consulta</option>
+                                <option value="trabajo" name="asunto"> Una propuesta de trabajo </option>
+                                <option value="otro" name="asunto"> Otro motivo</option>
+                            </select>
+                        </p>
+                        <p>
+                            Como preferis que te responda?
+                            <br>
+                            <input type="radio" id="por-mail" name="medio" value="mail" checked>
+                            <label for="por-mail"> Por correo</label>
+                            <input type="radio" id="por-telefono" name="medio" value="telefono">
+                            <label for="por-telefono"> Por telefono</label>
+                        </p>
+                        <p>
+                            <label for="mensaje"> Mensaje: </label>
+                            <br>
+                            <textarea name="mensaje" id="mensaje" name="mensaje" placeholder="Escribi tu mensaje aqui "
+                                required></textarea>
+                        </p>
+
+                    </fieldset>
+                    <p>
+                        <button type="submit"> Enviar mensaje </button>
+                        <button type="reset"> Borrar Todo</button>
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <!-- Título opcional -->
+        <p>Hecho por Aylen Tapia 2026. </p>
+    </footer>
+
+    <!-- 1. La librería de EmailJS que trae las herramientas -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
