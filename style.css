@@ -335,3 +335,70 @@ footer {
     color: white;
     margin-top: 10px;
 }
+
+/* =========================================
+   10. ADAPTABILIDAD DE CELULAR
+   ========================================= */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 200%;
+        padding-top: 10%;
+        padding-left: 0;
+        text-align: center;
+        align-self: center;
+    }
+    h3 {
+        padding-left: 0;
+        text-align: center;
+        align-self: center;
+    }
+    .sobre, #conocimientos h2, #trabajos h2, #contacto h2 {
+        font-size: 250%;
+        margin-top: 50px;
+    }
+
+    .menu {
+        align-self: center;
+        margin-top: 20px;
+    }
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+    .conte, .dosColumnas, .division {
+        flex-direction: column;
+        gap: 40px; 
+        padding: 0 20px;
+    }
+    .conte img {
+        width: 80%;
+    }
+    .conte p {
+        text-align: center;
+        font-size: 110%;
+    }
+    .contenedor {
+        width: 100%;
+    }
+    
+    .tresimg {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .tresimg img {
+        width: 40%;
+    }
+
+    .tareatext {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .division form fieldset {
+        width: 90%;
+    }
+}
